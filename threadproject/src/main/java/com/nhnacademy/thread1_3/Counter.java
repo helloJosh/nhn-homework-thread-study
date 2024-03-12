@@ -1,4 +1,4 @@
-package com.nhnacademy;
+package com.nhnacademy.thread1_3;
 
 import java.time.LocalTime;
 
@@ -36,8 +36,8 @@ public class Counter implements Runnable{
         System.out.println("start"+now);   
         Counter counter1 = new Counter();
         Counter counter2 = new Counter();
-        counter1.start();
-        counter2.start();
+        counter1.run();
+        counter2.run();
         System.out.println("end"+now);
     }
 }

@@ -1,4 +1,4 @@
-package com.nhnacademy;
+package com.nhnacademy.thread1_3;
 
 public class SelfRunnableCounter implements Runnable{
     int count;
