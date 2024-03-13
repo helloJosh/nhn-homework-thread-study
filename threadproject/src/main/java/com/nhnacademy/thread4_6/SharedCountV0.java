@@ -12,9 +12,7 @@ public class SharedCountV0 {
     }
 
     //synchronized 추가시 동기화 가능
-    public void increment() {
+    public synchronized void increment() {
         setCount(getCount() + 1);
     }
-
-
 }

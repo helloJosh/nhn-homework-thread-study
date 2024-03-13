@@ -30,7 +30,6 @@ public class Deadlock {
 
         lock2.lock();
         System.out.println("lock2 acquired");
-
         System.out.println("executing first operation.");
 
         lock2.unlock();
@@ -49,12 +48,9 @@ public class Deadlock {
 
         lock1.lock();
         System.out.println("lock1 acquired");
-
         System.out.println("executing second operation.");
 
         lock1.unlock();
         lock2.unlock();
     }
-
-    // helper methods
 }

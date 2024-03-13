@@ -8,6 +8,8 @@ public class Data {
         while(transfer){
             try{
                 wait();
+                //Thread.sleep(1000); 계속 리시버만 돌고 있다.
+                //syncrhonized 때문에 절대 못들어옴(TCP/IP 통신에서 사용)
             } catch (InterruptedException e){
                 Thread.currentThread().interrupt();
             }
@@ -22,6 +24,7 @@ public class Data {
         while(!transfer){
             try{
                 wait();
+                //Thread.sleep(1000);
             } catch (InterruptedException e){
                 Thread.currentThread().interrupt();
 

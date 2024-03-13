@@ -17,6 +17,5 @@ public class SharedCountV0Main {
         System.out.println(counter2.getName() + ": terminated");
 
         System.out.println("sharedCount : " + sharedCount.getCount());
-
     }
 }
